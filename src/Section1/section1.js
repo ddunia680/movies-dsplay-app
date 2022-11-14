@@ -22,7 +22,7 @@ function section1(props) {
             <div className='flex flex-row justify-start mx-5 items-center space-x-2 flex-wrap lg:flex-col lg:items-end lg:justify-start'>
                 {content.map(el => {
                     return <div className='flex flex-row flex-nowrap justify-start space-x-2 items-center lg:flex-col lg:px-5 lg:items-end lg:py-2' key={el.title}>
-                                <h2 className='font-bold text-md text-white'>{el.title}</h2>
+                                <h2 className='text-sm text-white lg:font-bold lg:text-md'>{el.title}</h2>
                                 <p className='text-sm text-gray-300'>{el.details}</p>
                             </div>
                 })}
@@ -35,10 +35,10 @@ function section1(props) {
                     <p>Drama<span><FontAwesomeIcon icon={faArrowRightLong}/></span></p>
                     <p>Orfaas da Tena</p>
                 </div>
-                <h1 className='text-4xl text-left text-white font-bold py-3'>Orphans of a Nation</h1>
-                <p className='text-left text-gray-300 text-lg'>Orfaas da Terra</p>
+                <h1 className='text-2xl text-left text-white lg:font-bold lg:text-4xl lg:py-3'>Orphans of a Nation</h1>
+                <p className='text-left text-gray-300 text-sm lg:text-lg'>Orfaas da Terra</p>
 
-                <div className='flex flex-row justify-start items-center text-md space-x-5 my-3 text-lg text-gray-300'>
+                <div className='flex flex-row justify-start items-center my-3 text-gray-300 text-sm space-x-2 lg:text-md lg:space-x-5'>
 
                     <div className=' flex flex-row justify-start space-x-1 text-yellow-500'>
                         <FontAwesomeIcon icon={faStar}/>
@@ -53,13 +53,13 @@ function section1(props) {
                     <p>155 episodes</p>
                 </div>
                 
-                <p className='text-left text-white text-lg'>Diverse cultures, beliefs, dreams, accents and a single nation: Brazil. The couple Laila and Jamil disembark in the country to live the love that united them still in the Middle East.</p>
+                <p className='text-left text-white text-sm lg:text-lg'>Diverse cultures, beliefs, dreams, accents and a single nation: Brazil. The couple Laila and Jamil disembark in the country to live the love that united them still in the Middle East.</p>
 
                 <div className='flex flex-col w-fit h-fit my-5'> 
                     <span className='w-20 h-10 plusB flex flex-row justify-center items-center text-white hover:bg-gray-100 hover:text-gray-900'>
                         <FontAwesomeIcon icon={faPlus} className='text-sm'/>
                     </span>
-                    <p className='text-md text-white'>Add</p>
+                    <p className='text-sm text-white lg:text-md'>Add</p>
             </div>
             </div>
                 {/* Right div */}

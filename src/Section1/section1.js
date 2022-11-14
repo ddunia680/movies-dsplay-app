@@ -17,7 +17,7 @@ function section1(props) {
         {title:'SHOWRUNNER', details: 'Duca Rachid'},
     ]
     return (
-        <div className='flex flex-col-reverse pt-20 mx-auto px-5 lg:container  lg:mx-auto lg:px-20 lg:flex-row lg:justify-evently'>
+        <div className='flex flex-col-reverse pt-20 mx-auto px-1 lg:px-5 lg:container  lg:mx-auto lg:px-20 lg:flex-row lg:justify-evently'>
             {/* Left div */}
             <div className='flex flex-row justify-start mx-5 items-center space-x-2 flex-wrap lg:flex-col lg:items-end lg:justify-start'>
                 {content.map(el => {

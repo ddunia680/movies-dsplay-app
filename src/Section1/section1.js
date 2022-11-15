@@ -17,7 +17,7 @@ function section1(props) {
         {title:'SHOWRUNNER', details: 'Duca Rachid'},
     ]
     return (
-        <div className='flex flex-col-reverse pt-20 mx-auto px-1 lg:px-5 lg:container  lg:mx-auto lg:px-20 lg:flex-row lg:justify-evently'>
+        <div className='flex flex-col-reverse pt-10 mx-auto px-1 lg:px-5 lg:container lg:pt-20 lg:mx-auto lg:px-20 lg:flex-row lg:justify-evently'>
             {/* Left div */}
             <div className='flex flex-row justify-start mx-5 items-center space-x-2 flex-wrap lg:flex-col lg:items-end lg:justify-start'>
                 {content.map(el => {
@@ -56,7 +56,7 @@ function section1(props) {
                 <p className='text-left text-white text-sm lg:text-lg'>Diverse cultures, beliefs, dreams, accents and a single nation: Brazil. The couple Laila and Jamil disembark in the country to live the love that united them still in the Middle East.</p>
 
                 <div className='flex flex-col w-fit h-fit my-5'> 
-                    <span className='w-20 h-10 plusB flex flex-row justify-center items-center text-white hover:bg-gray-100 hover:text-gray-900'>
+                    <span className='w-20 h-10 plusB flex flex-row justify-center items-center bg-waydarkerBlur text-white hover:bg-gray-100 hover:text-gray-900'>
                         <FontAwesomeIcon icon={faPlus} className='text-sm'/>
                     </span>
                     <p className='text-sm text-white lg:text-md'>Add</p>

@@ -8,7 +8,7 @@ import './header.css';
 function header(props) {
     return (
         <div>
-            <nav className='fixed w-screen h-7 mx-auto px-0 flex flex-row justify-between px-2 lg:justify-around lg:h-20 lg:px-6'>
+            <nav className='header w-screen h-7 mx-auto px-0 bg-waydarkerBlur flex flex-row justify-between px-2 lg:justify-around lg:h-20 lg:px-6'>
           {/* Left side */}
           <div className='flex flex-row items-center justify-between px-0 lg:px-5'>
             <h1 className='hidden font-bold text-2xl text-white pr-10 md:block'>betaseries</h1>

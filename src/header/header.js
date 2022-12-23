@@ -6,6 +6,11 @@ import { faHome, faLaptop, faSearch, faUserGroup, faVideo } from '@fortawesome/f
 import './header.css';
 
 function header(props) {
+
+    // let navDarker='';
+    // window.addEventListener('scroll', () => {
+    //     navDarker = 'bg-waydarkerBlur';
+    // })
     return (
         <div>
             <nav className='header w-screen h-7 mx-auto px-0 bg-waydarkerBlur flex flex-row justify-between px-2 lg:justify-around lg:h-20 lg:px-6'>
@@ -30,7 +35,7 @@ function header(props) {
           </div>
           {/* Right side */}
           <div className='flex flex-row justify-start items-center space-x-5'>
-            <button className='  hidden signUp text-white px-3 py-1 border-none lg:block  hover:bg-white hover:text-gray-500'>Sign up</button>
+            <button className='  hidden signUp text-white px-3 py-1 border-none lg:block  hover:bg-black hover:text-white-500'>Sign up</button>
             <p className=' text-chocolateBrayish text-sm lg:text-md hover:text-white'>Sign in</p>
             <span className=' text-chocolateBrayish text-sm lg:text-md hover:text-white'>
               <FontAwesomeIcon icon={faSearch} />

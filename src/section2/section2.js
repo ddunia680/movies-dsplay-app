@@ -50,16 +50,44 @@ function section2(props) {
         <div className='bg-lighterDarkBlur'>
             {/* Menu bar */}
             <div className='flex flex-row overflow-auto justify-start bg-darkerBlur items-center py-0 px-2 space-x-5 w-100 my-5 lg:justify-center lg:space-x-20'>
-                <h3 className='py-5 text-base box-content text-chocolateBrayish hover:border-b-2 hover:border-white buttonHv hover:text-white'>SEASONS</h3>
-                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'>EPISODES</h3>
-                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'>ACTORS</h3>
-                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'>PHOTOS</h3>
+                <h3 className='py-5 text-base box-content text-chocolateBrayish hover:border-b-2 hover:border-white buttonHv hover:text-white'
+                onClick={() => {
+                    window.scrollTo({
+                        top: 670,
+                        behavior: 'smooth'
+                    })
+                }}
+                >SEASONS</h3>
+                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'
+                onClick={() => {
+                    window.scrollTo({
+                        top: 1000,
+                        behavior: 'smooth'
+                    })
+                }}
+                >EPISODES</h3>
+                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'
+                onClick={() => {
+                    window.scrollTo({
+                        top: 1300,
+                        behavior: 'smooth'
+                    })
+                }}
+                >ACTORS</h3>
+                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'
+                onClick={() => {
+                    window.scrollTo({
+                        top: 1700,
+                        behavior: 'smooth'
+                    })
+                }}
+                >PHOTOS</h3>
             </div>
 
             <div className='flex flex-row'>
                 <div className='flex flex-col mx-5'>
                     <h3 className='py-5 text-white text-left'>Season (1)</h3>
-                    <img src={orphans} alt='' className='w-[8.5rem] h-[12rem]'/>
+                    <img src={orphans} alt='' className='w-[8.5rem] h-[12rem] hover:opacity-50'/>
                     <p className='text-md text-white'>Season 1</p>
                     <p className='text-md text-chocolateBrayish'>155 episodes</p>
                 </div>
@@ -72,7 +100,7 @@ function section2(props) {
                 {episodes.map(el => {
                     return (
                     <div className='flex flex-col py-2 px-5' key={el.episode}>
-                        <img src={el.image} alt='' className='w-[16rem] h-[7rem'/>
+                        <img src={el.image} alt='' className='w-[16rem] h-[7rem] hover:opacity-50'/>
                         <h3 className='text-sm text-center text-white pb-0 pt-1 lg:text-md'>{el.episode}</h3>
                         <h3 className='text-sm text-center text-chocolateBrayish lg:text-md'>{el.date}</h3>
                     </div>)
@@ -81,7 +109,7 @@ function section2(props) {
                 </div>
             </div>
                 {/* 3rd section */}
-            <h3 className='py-5 px-5 text-white text-left'>Actors ({actorsCount})</h3>
+            <h3 className='py-5 px-5 text-white text-left'>Actors '({actorsCount})'</h3>
 
             <div className='w-100 scrollWrapper overflow-auto px-1 pb-10'>
                 <div className='flex flex-row flex-wrap space-x-2 w-[200rem]'>
@@ -89,7 +117,7 @@ function section2(props) {
                 {actors.map(el => {
                     return (
                     <div className='flex flex-col py-2 px-5' key={Math.random()}>
-                        <img src={el.image} alt='' className='w-[10rem] h-[10rem] rounded-full'/>
+                        <img src={el.image} alt='' className='w-[10rem] h-[10rem] rounded-full hover:opacity-50'/>
                         <h3 className='text-sm text-center text-white pb-0 pt-1 lg:text-md'>{el.name}</h3>
                         <h3 className='text-sm text-center text-chocolateBrayish lg:text-md'>{el.actorName}</h3>
                     </div>)
@@ -106,7 +134,7 @@ function section2(props) {
                 {album.map(el => {
                     return (
                     <div className='flex flex-col py-2 px-5' key={Math.random()}>
-                        <img src={el} alt='' className='w-[10rem] h-[10rem]'/>
+                        <img src={el} alt='' className='w-[10rem] h-[10rem] hover:opacity-50'/>
                     </div>)
                 })}
                 

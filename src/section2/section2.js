@@ -49,8 +49,8 @@ function section2(props) {
     return (
         <div className='bg-lighterDarkBlur'>
             {/* Menu bar */}
-            <div className='flex flex-row overflow-auto justify-start bg-darkerBlur items-center py-0 px-2 space-x-5 w-100 my-5 lg:justify-center lg:space-x-20'>
-                <h3 className='py-5 text-base box-content text-chocolateBrayish hover:border-b-2 hover:border-white buttonHv hover:text-white'
+            <div className='flex font-bold flex-row overflow-auto justify-start bg-darkerBlur items-center py-0 px-2 space-x-5 w-100 my-5 lg:justify-center lg:space-x-20'>
+                <h3 className='py-5 text-base box-content text-chocolateBrayish border-b-4 border-transparent hover:border-b-4 hover:border-white buttonHv hover:text-white'
                 onClick={() => {
                     window.scrollTo({
                         top: 670,
@@ -58,7 +58,7 @@ function section2(props) {
                     })
                 }}
                 >SEASONS</h3>
-                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'
+                <h3 className='py-5 text-base buttonHv text-chocolateBrayish border-b-4 border-transparent hover:border-b-4 hover:border-white hover:text-white'
                 onClick={() => {
                     window.scrollTo({
                         top: 1000,
@@ -66,7 +66,7 @@ function section2(props) {
                     })
                 }}
                 >EPISODES</h3>
-                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'
+                <h3 className='py-5 text-base buttonHv text-chocolateBrayish border-b-4 border-transparent hover:border-b-4 hover:border-white hover:text-white'
                 onClick={() => {
                     window.scrollTo({
                         top: 1300,
@@ -74,7 +74,7 @@ function section2(props) {
                     })
                 }}
                 >ACTORS</h3>
-                <h3 className='py-5 text-base buttonHv text-chocolateBrayish hover:border-b-2 hover:border-white hover:text-white'
+                <h3 className='py-5 text-base buttonHv text-chocolateBrayish border-b-4 border-transparent hover:border-b-4 hover:border-white hover:text-white'
                 onClick={() => {
                     window.scrollTo({
                         top: 1700,

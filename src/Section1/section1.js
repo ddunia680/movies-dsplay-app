@@ -59,7 +59,7 @@ function section1(props) {
                     <span className='w-20 h-10 plusB flex flex-row justify-center items-center bg-waydarkerBlur text-white hover:bg-gray-100 hover:text-gray-900'>
                         <FontAwesomeIcon icon={faPlus} className='text-sm'/>
                     </span>
-                    <p className='text-sm text-white lg:text-md'>Add</p>
+                    <p className='text-sm text-center text-white lg:text-md'>Add</p>
             </div>
             </div>
                 {/* Right div */}

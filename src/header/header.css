@@ -1,10 +1,8 @@
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 .signUp {
     background-color: rgb(92, 82, 82, 0.6);
     border-radius: 5px;
+}
+
+.active {
+    color: white;
 }

@@ -18,7 +18,7 @@ function header(props) {
             <nav className='w-screen h-7 mx-auto bg-waydarkerBlur flex flex-row justify-between px-2 lg:justify-around lg:h-20 lg:px-6'>
               {/* Left side */}
               <div className='flex flex-row items-center justify-between px-0 lg:px-5'>
-                <h1 className='hidden font-bold text-2xl text-white pr-10 md:block'>betaseries</h1>
+                <h1 className='hidden font-bold text-2xl text-white pr-10 md:block'>Dunia's Movies</h1>
                 <div className='flex flex-row justify-start items-center space-x-4 lg:space-x-6 text-white'>
                     <p className=' flex flex-row items-center space-x-2 text-chocolateBrayish text-sm lg:text-md hover:text-white hover:cursor-pointer'><NavLink to="/home" className='flex flex-row items-center space-x-2'><FontAwesomeIcon icon={faHome} />
                       <span className='hidden lg:block'>Home</span></NavLink>
